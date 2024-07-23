@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Kicks</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Add font family */
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* Add hover effect */
+      .nav-link:hover {
+        font-weight: 750;
+        color: #4e4c4c;
+        text-decoration: underline;
+        font-size: larger;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="text-white text-lg text-center py-3"
+      style="background-color: #333"
+    >
+      <a href="#" class="hover:text-gray-400"
+        >SUPERSALE LIVE - UP TO 60% OFF →</a
+      >
+    </div>
+    <div class="flex justify-around mt-10">
+      <div class="mt-3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="account"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+        >
+          <path
+            id="Path_1"
+            data-name="Path 1"
+            d="M20,9.99A10,10,0,1,0,3.54,17.6c.02.02.04.02.04.04.18.14.36.28.56.42a2.673,2.673,0,0,1,.28.219,9.983,9.983,0,0,0,11.2,0c.1-.059.178-.138.278-.2.18-.139.38-.279.56-.419.02-.02.04-.02.04-.04A10.169,10.169,0,0,0,20,9.989ZM10,18.741a8.679,8.679,0,0,1-5.02-1.6,4.079,4.079,0,0,1,.1-.479,5.213,5.213,0,0,1,.52-1.239,4.4,4.4,0,0,1,.8-1.02,5.615,5.615,0,0,1,1.02-.8,5.047,5.047,0,0,1,1.22-.5,5.316,5.316,0,0,1,5.02,1.279A5.007,5.007,0,0,1,14.74,16a5.314,5.314,0,0,1,.3,1.139,8.788,8.788,0,0,1-5.04,1.6ZM6.94,9.491a3.278,3.278,0,0,1,0-2.559A3.411,3.411,0,0,1,8.72,5.154,3.119,3.119,0,0,1,10,4.894a3.054,3.054,0,0,1,1.28.26,3.411,3.411,0,0,1,1.78,1.778,3.118,3.118,0,0,1,.26,1.279,3.045,3.045,0,0,1-.26,1.279,3.408,3.408,0,0,1-1.78,1.779,3.394,3.394,0,0,1-2.58,0,3.55,3.55,0,0,1-1.06-.719,3.157,3.157,0,0,1-.7-1.06Zm9.28,6.632c0-.04-.02-.06-.02-.1a6.525,6.525,0,0,0-.86-1.757,6.1,6.1,0,0,0-1.36-1.419,6.509,6.509,0,0,0-1.3-.76,3.525,3.525,0,0,0,.58-.479,5.25,5.25,0,0,0,.78-.98,4.53,4.53,0,0,0,.66-2.417,4.638,4.638,0,0,0-.36-1.838,4.749,4.749,0,0,0-1.02-1.5,4.806,4.806,0,0,0-1.5-1,4.889,4.889,0,0,0-3.68,0,4.539,4.539,0,0,0-1.5,1.019,4.8,4.8,0,0,0-1,1.5,4.638,4.638,0,0,0-.36,1.838A4.349,4.349,0,0,0,5.46,9.49a4.6,4.6,0,0,0,.5,1.159,4.545,4.545,0,0,0,.78.98,3.5,3.5,0,0,0,.6.479,6.4,6.4,0,0,0-1.3.78,6.929,6.929,0,0,0-1.36,1.4,6.249,6.249,0,0,0-.86,1.757.217.217,0,0,0-.02.1A8.747,8.747,0,1,1,18.76,9.99a8.7,8.7,0,0,1-2.54,6.134Z"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="ml-20">
+        <img
+          src="//www.superkicks.in/cdn/shop/files/squarelogo-2_2x_435ae8f5-0c82-4cb6-926d-49d17d86ac01.png?v=1670233733"
+          alt="Superkicks"
+          srcset="
+            //www.superkicks.in/cdn/shop/files/squarelogo-2_2x_435ae8f5-0c82-4cb6-926d-49d17d86ac01.png?v=1670233733&amp;width=50   50w,
+            //www.superkicks.in/cdn/shop/files/squarelogo-2_2x_435ae8f5-0c82-4cb6-926d-49d17d86ac01.png?v=1670233733&amp;width=100 100w,
+            //www.superkicks.in/cdn/shop/files/squarelogo-2_2x_435ae8f5-0c82-4cb6-926d-49d17d86ac01.png?v=1670233733&amp;width=150 150w
+          "
+          width="60"
+          height="44.00000000000001"
+          class="header__heading-logo"
+        />
+      </div>
+      <div class="flex justify-around">
+        <input
+          type="text"
+          name="q"
+          placeholder="Search..."
+          class="border-2 rounded-full pl-7 py-1 mt-1"
+          style="
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNNTA4LjkgNDc4LjdMMzYwLjEgMzMwYzI4LjItMzQuOCA0NS4yLTc5LjEgNDUuMi0xMjcuM0M0MDUuMyA5MC45IDMxNC40IDAgMjAyLjcgMFMwIDkwLjkgMCAyMDIuN3M5MC45IDIwMi43IDIwMi43IDIwMi43YzQ4LjIgMCA5Mi41LTE3IDEyNy4zLTQ1LjJsMTQ4LjcgMTQ4LjdjNC4yIDQuMiAxMC45IDQuMiAxNS4xIDBsMTUuMS0xNS4xYzQuMS00LjIgNC4xLTEwLjkgMC0xNS4xem0tMzA2LjItMTE2Yy04OC4yIDAtMTYwLTcxLjgtMTYwLTE2MHM3MS44LTE2MCAxNjAtMTYwIDE2MCA3MS44IDE2MCAxNjAtNzEuOCAxNjAtMTYwIDE2MHoiIGZpbGw9IiMzNDNmNDkiLz48L3N2Zz4=);
+            background-repeat: no-repeat;
+            background-position: 9px 9px;
+            background-size: 15px 15px;
+            background-color: #fff;
+          "
+        />
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20px"
+          height="20px"
+          viewBox="0 0 24 24"
+          fill="none"
+          overflow="unset"
+          class="ml-5 mt-4"
+        >
+          <path
+            d="M12.4869 22C12.2364 21.9968 11.9918 21.9232 11.7804 21.7875C8.18822 19.57 5.48518 17.3766 3.2783 14.8705C2.01853 13.5287 1.04215 11.942 0.408559 10.207C-0.730606 6.84675 0.5832 2.9211 3.46882 1.07256C4.78425 0.221399 6.35422 -0.134962 7.90363 0.0659208C9.45304 0.266804 10.8831 1.01212 11.9431 2.17126C12.1376 2.37977 12.3162 2.60031 12.4869 2.81685C12.7194 2.51694 12.97 2.2317 13.2371 1.96275C13.8816 1.32075 14.6473 0.816306 15.4888 0.479444C16.3303 0.142583 17.2302 -0.0198119 18.1351 0.00192686C19.0214 0.0266866 19.8936 0.23235 20.6992 0.606539C21.5048 0.980728 22.2271 1.51571 22.8227 2.17928C25.0693 4.63732 25.6012 7.62065 24.3072 10.8045C23.6255 12.404 22.6611 13.8647 21.4613 15.1151C19.3548 17.3836 16.9713 19.3724 14.3683 21.0336C14.019 21.2662 13.6578 21.4907 13.3006 21.7113L13.1934 21.7795C12.9825 21.9174 12.738 21.9937 12.4869 22Z"
+            stroke="currentColor"
+          ></path>
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20px"
+          height="20px"
+          viewBox="0 0 17.952 19.875"
+          class="ml-5 mt-3 mr-5"
+        >
+          <g id="bag" transform="translate(-2.25 -1.125)">
+            <path
+              id="Path_2"
+              data-name="Path 2"
+              d="M18.919,10.282H3.532v11.54A1.282,1.282,0,0,0,4.815,23.1H17.637a1.282,1.282,0,0,0,1.282-1.282ZM2.25,9V21.823a2.565,2.565,0,0,0,2.565,2.565H17.637A2.565,2.565,0,0,0,20.2,21.823V9Z"
+              transform="translate(0 -3.387)"
+              fill-rule="evenodd"
+            ></path>
+            <path
+              id="Path_3"
+              data-name="Path 3"
+              d="M14.613,2.407a3.206,3.206,0,0,0-3.206,3.206H10.125a4.488,4.488,0,0,1,8.976,0H17.819A3.206,3.206,0,0,0,14.613,2.407Z"
+              transform="translate(-3.387)"
+            ></path>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <nav class="flex justify-around py-9">
+      <ul class="flex">
+        <li class="mr-6">
+          <a href="#" class="nav-link text-lg">New Arrivals</a>
+        </li>
+        <li class="mr-6">
+          <a href="#" class="nav-link text-lg text-blue-400">Nike Dunk </a>
+        </li>
+        <li class="mr-6">
+          <a href="#" class="nav-link text-lg"> Footwear</a>
+        </li>
+        <li class="mr-6">
+          <a href="#" class="nav-link text-lg">Apparel</a>
+        </li>
+        <li class="mr-6">
+          <a href="#" class="nav-link text-lg">Accessories</a>
+        </li>
+        <li class="mr-6">
+          <a href="#" class="nav-link text-lg">Superkicks Blogs</a>
+        </li>
+        <li class="mr-6">
+          <a href="#" class="nav-link text-lg">Brands</a>
+        </li>
+        <li class="mr-6">
+          <a href="#" class="nav-link text-lg">Releases</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="text-center text-red-500">
+      <a href="#" class="nav-link text-lg hover:text-red-700">Super Sale</a>
+    </div>
+    <div class="flex flex-wrap bg-gray-200 mt-5 p-4">
+      <!-- Big Image -->
+      <div class="w-full md:w-2/3 lg:w-2/3 xl:w-2/3 p-2">
+        <img
+          src="//www.superkicks.in/cdn/shop/files/Desktop_Banner.png?v=1718891514"
+          alt=""
+        />
+      </div>
+
+      <!-- Column Layout for Other Images -->
+      <div class="w-full md:w-1/3 lg:w-1/3 xl:w-1/3 flex flex-col flex-wrap">
+        <div class="p-2">
+          <img
+            src="//www.superkicks.in/cdn/shop/files/SAMBA_OG_1_2.png?v=1719331976"
+            alt=""
+          />
+        </div>
+        <div class="p-2">
+          <img
+            src="//www.superkicks.in/cdn/shop/files/nike_air_force_1.png?v=1719386173"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-200 pt-5 text-3xl font-semibold pl-10">
+      <span> New Arrivals </span>
+    </div>
+    <div class="flex justify-around bg-gray-200 p-5">
+      <div class="">
+        <img
+          srcset="
+            //www.superkicks.in/cdn/shop/products/2-3_04890a75-cb2d-42fa-adff-7652852d6bcf.jpg?v=1681121167&amp;width=165   165w,
+            //www.superkicks.in/cdn/shop/products/2-3_04890a75-cb2d-42fa-adff-7652852d6bcf.jpg?v=1681121167&amp;width=360   360w,
+            //www.superkicks.in/cdn/shop/products/2-3_04890a75-cb2d-42fa-adff-7652852d6bcf.jpg?v=1681121167&amp;width=533   533w,
+            //www.superkicks.in/cdn/shop/products/2-3_04890a75-cb2d-42fa-adff-7652852d6bcf.jpg?v=1681121167&amp;width=720   720w,
+            //www.superkicks.in/cdn/shop/products/2-3_04890a75-cb2d-42fa-adff-7652852d6bcf.jpg?v=1681121167&amp;width=940   940w,
+            //www.superkicks.in/cdn/shop/products/2-3_04890a75-cb2d-42fa-adff-7652852d6bcf.jpg?v=1681121167&amp;width=1066 1066w,
+            //www.superkicks.in/cdn/shop/products/2-3_04890a75-cb2d-42fa-adff-7652852d6bcf.jpg?v=1681121167                1920w
+          "
+          src="//www.superkicks.in/cdn/shop/products/2-3_04890a75-cb2d-42fa-adff-7652852d6bcf.jpg?v=1681121167&amp;width=533"
+          sizes="(min-width: 1440px) 327px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+          alt=""
+          class="motion-reduce rounded-md"
+          loading="lazy"
+          width="250"
+          height="250"
+        />
+        <div class="ml-2 grid">
+          <span class="text-gray-500 text-xs mt-2">Nike</span>
+
+          <span class="font-normal">AIR FORCE 1 '07</span>
+          <span class="text-gray-400 text-sm">CARBON BLACK/CHACOA-CARBON'</span>
+          <span>₹ 7,495.00</span>
+        </div>
+      </div>
+      <div class="">
+        <img
+          srcset="
+            //www.superkicks.in/cdn/shop/files/2_2ad65905-20c8-45f6-92b7-8c6c2273a510.jpg?v=1711799540&amp;width=165   165w,
+            //www.superkicks.in/cdn/shop/files/2_2ad65905-20c8-45f6-92b7-8c6c2273a510.jpg?v=1711799540&amp;width=360   360w,
+            //www.superkicks.in/cdn/shop/files/2_2ad65905-20c8-45f6-92b7-8c6c2273a510.jpg?v=1711799540&amp;width=533   533w,
+            //www.superkicks.in/cdn/shop/files/2_2ad65905-20c8-45f6-92b7-8c6c2273a510.jpg?v=1711799540&amp;width=720   720w,
+            //www.superkicks.in/cdn/shop/files/2_2ad65905-20c8-45f6-92b7-8c6c2273a510.jpg?v=1711799540&amp;width=940   940w,
+            //www.superkicks.in/cdn/shop/files/2_2ad65905-20c8-45f6-92b7-8c6c2273a510.jpg?v=1711799540&amp;width=1066 1066w,
+            //www.superkicks.in/cdn/shop/files/2_2ad65905-20c8-45f6-92b7-8c6c2273a510.jpg?v=1711799540                2000w
+          "
+          src="//www.superkicks.in/cdn/shop/files/2_2ad65905-20c8-45f6-92b7-8c6c2273a510.jpg?v=1711799540&amp;width=533"
+          sizes="(min-width: 1440px) 327px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+          alt=""
+          class="motion-reduce rounded-md"
+          loading="lazy"
+          width="250"
+          height="250"
+        />
+        <div class="ml-2 grid">
+          <span class="text-gray-500 text-xs mt-2">Nike</span>
+
+          <span class="font-normal">ZOOM VOMERO 5</span>
+          <span class="text-gray-400 text-sm">CARBON BLACK/CHACOA-CARBON'</span>
+          <span>₹ 14,999.00</span>
+        </div>
+      </div>
+      <div class="">
+        <img
+          srcset="
+            //www.superkicks.in/cdn/shop/files/2_767c21b2-d21c-4ade-9b23-516b115d85ee.jpg?v=1719562247&amp;width=165   165w,
+            //www.superkicks.in/cdn/shop/files/2_767c21b2-d21c-4ade-9b23-516b115d85ee.jpg?v=1719562247&amp;width=360   360w,
+            //www.superkicks.in/cdn/shop/files/2_767c21b2-d21c-4ade-9b23-516b115d85ee.jpg?v=1719562247&amp;width=533   533w,
+            //www.superkicks.in/cdn/shop/files/2_767c21b2-d21c-4ade-9b23-516b115d85ee.jpg?v=1719562247&amp;width=720   720w,
+            //www.superkicks.in/cdn/shop/files/2_767c21b2-d21c-4ade-9b23-516b115d85ee.jpg?v=1719562247&amp;width=940   940w,
+            //www.superkicks.in/cdn/shop/files/2_767c21b2-d21c-4ade-9b23-516b115d85ee.jpg?v=1719562247&amp;width=1066 1066w,
+            //www.superkicks.in/cdn/shop/files/2_767c21b2-d21c-4ade-9b23-516b115d85ee.jpg?v=1719562247                2000w
+          "
+          src="//www.superkicks.in/cdn/shop/files/2_767c21b2-d21c-4ade-9b23-516b115d85ee.jpg?v=1719562247&amp;width=533"
+          sizes="(min-width: 1440px) 327px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+          alt=""
+          class="motion-reduce rounded-md"
+          loading="lazy"
+          width="250"
+          height="250"
+        />
+        <div class="ml-2 grid">
+          <span class="text-gray-500 text-xs mt-2">Adidas</span>
+
+          <span class="font-normal">AIR ZOOM SPIRIDON CAGE 2</span>
+          <span class="text-gray-400 text-sm">CARBON BLACK/CHACOA-CARBON'</span>
+          <span>₹ 15,995.00</span>
+        </div>
+      </div>
+      <div class="">
+        <img
+          srcset="
+            //www.superkicks.in/cdn/shop/files/2_53f760f9-d6e6-485e-ab48-1cd2cbee4372.jpg?v=1719818288&amp;width=165   165w,
+            //www.superkicks.in/cdn/shop/files/2_53f760f9-d6e6-485e-ab48-1cd2cbee4372.jpg?v=1719818288&amp;width=360   360w,
+            //www.superkicks.in/cdn/shop/files/2_53f760f9-d6e6-485e-ab48-1cd2cbee4372.jpg?v=1719818288&amp;width=533   533w,
+            //www.superkicks.in/cdn/shop/files/2_53f760f9-d6e6-485e-ab48-1cd2cbee4372.jpg?v=1719818288&amp;width=720   720w,
+            //www.superkicks.in/cdn/shop/files/2_53f760f9-d6e6-485e-ab48-1cd2cbee4372.jpg?v=1719818288&amp;width=940   940w,
+            //www.superkicks.in/cdn/shop/files/2_53f760f9-d6e6-485e-ab48-1cd2cbee4372.jpg?v=1719818288&amp;width=1066 1066w,
+            //www.superkicks.in/cdn/shop/files/2_53f760f9-d6e6-485e-ab48-1cd2cbee4372.jpg?v=1719818288                2000w
+          "
+          src="//www.superkicks.in/cdn/shop/files/2_53f760f9-d6e6-485e-ab48-1cd2cbee4372.jpg?v=1719818288&amp;width=533"
+          sizes="(min-width: 1440px) 327px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+          alt=""
+          class="motion-reduce rounded-md"
+          loading="lazy"
+          width="250"
+          height="250"
+        />
+        <div class="ml-2 grid">
+          <span class="text-gray-500 text-xs mt-2">Adidas</span>
+
+          <span class="font-normal">MAD IIINFINITY</span>
+          <span class="text-gray-400 text-sm">CARBON BLACK/CHACOA-CARBON'</span>
+          <span>₹ 11,999.00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-200 pt-5 text-3xl font-semibold pl-10">
+      <span> Best suggestion </span>
+    </div>
+    <div class="flex justify-around bg-gray-200 p-5">
+      <div class="">
+        <img
+          srcset="
+            //www.superkicks.in/cdn/shop/files/1_447d1f50-a376-43b2-ba82-eaecedfec5b0.jpg?v=1716291762&amp;width=165   165w,
+            //www.superkicks.in/cdn/shop/files/1_447d1f50-a376-43b2-ba82-eaecedfec5b0.jpg?v=1716291762&amp;width=360   360w,
+            //www.superkicks.in/cdn/shop/files/1_447d1f50-a376-43b2-ba82-eaecedfec5b0.jpg?v=1716291762&amp;width=533   533w,
+            //www.superkicks.in/cdn/shop/files/1_447d1f50-a376-43b2-ba82-eaecedfec5b0.jpg?v=1716291762&amp;width=720   720w,
+            //www.superkicks.in/cdn/shop/files/1_447d1f50-a376-43b2-ba82-eaecedfec5b0.jpg?v=1716291762&amp;width=940   940w,
+            //www.superkicks.in/cdn/shop/files/1_447d1f50-a376-43b2-ba82-eaecedfec5b0.jpg?v=1716291762&amp;width=1066 1066w,
+            //www.superkicks.in/cdn/shop/files/1_447d1f50-a376-43b2-ba82-eaecedfec5b0.jpg?v=1716291762                2000w
+          "
+          src="//www.superkicks.in/cdn/shop/files/1_447d1f50-a376-43b2-ba82-eaecedfec5b0.jpg?v=1716291762&amp;width=533"
+          sizes="(min-width: 1440px) 327px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+          alt=""
+          class="motion-reduce rounded-md"
+          loading="lazy"
+          width="250"
+          height="250"
+        />
+        <div class="ml-2 grid">
+          <span class="text-gray-500 text-xs mt-2">Nike</span>
+
+          <span class="font-normal">AIR FORCE 1 '07</span>
+          <span class="text-gray-400 text-sm">CARBON BLACK/CHACOA-CARBON'</span>
+          <span>₹ 7,495.00</span>
+        </div>
+      </div>
+      <div class="">
+        <img
+          srcset="
+            //www.superkicks.in/cdn/shop/files/DSC3268.png?v=1710406196&amp;width=165   165w,
+            //www.superkicks.in/cdn/shop/files/DSC3268.png?v=1710406196&amp;width=360   360w,
+            //www.superkicks.in/cdn/shop/files/DSC3268.png?v=1710406196&amp;width=533   533w,
+            //www.superkicks.in/cdn/shop/files/DSC3268.png?v=1710406196&amp;width=720   720w,
+            //www.superkicks.in/cdn/shop/files/DSC3268.png?v=1710406196&amp;width=940   940w,
+            //www.superkicks.in/cdn/shop/files/DSC3268.png?v=1710406196&amp;width=1066 1066w,
+            //www.superkicks.in/cdn/shop/files/DSC3268.png?v=1710406196                2000w
+          "
+          src="//www.superkicks.in/cdn/shop/files/DSC3268.png?v=1710406196&amp;width=533"
+          sizes="(min-width: 1440px) 327px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+          alt=""
+          class="motion-reduce rounded-md"
+          loading="lazy"
+          width="250"
+          height="250"
+        />
+        <div class="ml-2 grid">
+          <span class="text-gray-500 text-xs mt-2">Nike</span>
+
+          <span class="font-normal">ZOOM VOMERO 5</span>
+          <span class="text-gray-400 text-sm">CARBON BLACK/CHACOA-CARBON'</span>
+          <span>₹ 14,999.00</span>
+        </div>
+      </div>
+      <div class="">
+        <img
+          srcset="
+            //www.superkicks.in/cdn/shop/files/4_dd907260-4040-481d-89dd-20c464952ae5.jpg?v=1714481696&amp;width=165   165w,
+            //www.superkicks.in/cdn/shop/files/4_dd907260-4040-481d-89dd-20c464952ae5.jpg?v=1714481696&amp;width=360   360w,
+            //www.superkicks.in/cdn/shop/files/4_dd907260-4040-481d-89dd-20c464952ae5.jpg?v=1714481696&amp;width=533   533w,
+            //www.superkicks.in/cdn/shop/files/4_dd907260-4040-481d-89dd-20c464952ae5.jpg?v=1714481696&amp;width=720   720w,
+            //www.superkicks.in/cdn/shop/files/4_dd907260-4040-481d-89dd-20c464952ae5.jpg?v=1714481696&amp;width=940   940w,
+            //www.superkicks.in/cdn/shop/files/4_dd907260-4040-481d-89dd-20c464952ae5.jpg?v=1714481696&amp;width=1066 1066w,
+            //www.superkicks.in/cdn/shop/files/4_dd907260-4040-481d-89dd-20c464952ae5.jpg?v=1714481696                2000w
+          "
+          src="//www.superkicks.in/cdn/shop/files/4_dd907260-4040-481d-89dd-20c464952ae5.jpg?v=1714481696&amp;width=533"
+          sizes="(min-width: 1440px) 327px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+          alt=""
+          class="motion-reduce rounded-md"
+          loading="lazy"
+          width="250"
+          height="250"
+        />
+        <div class="ml-2 grid">
+          <span class="text-gray-500 text-xs mt-2">Adidas</span>
+
+          <span class="font-normal">AIR ZOOM SPIRIDON CAGE 2</span>
+          <span class="text-gray-400 text-sm">CARBON BLACK/CHACOA-CARBON'</span>
+          <span>₹ 15,995.00</span>
+        </div>
+      </div>
+      <div class="">
+        <img
+          srcset="
+            //www.superkicks.in/cdn/shop/files/1_714a25e4-6ea0-4523-a2ad-a2b953f7a1e1.png?v=1719334920&amp;width=165   165w,
+            //www.superkicks.in/cdn/shop/files/1_714a25e4-6ea0-4523-a2ad-a2b953f7a1e1.png?v=1719334920&amp;width=360   360w,
+            //www.superkicks.in/cdn/shop/files/1_714a25e4-6ea0-4523-a2ad-a2b953f7a1e1.png?v=1719334920&amp;width=533   533w,
+            //www.superkicks.in/cdn/shop/files/1_714a25e4-6ea0-4523-a2ad-a2b953f7a1e1.png?v=1719334920&amp;width=720   720w,
+            //www.superkicks.in/cdn/shop/files/1_714a25e4-6ea0-4523-a2ad-a2b953f7a1e1.png?v=1719334920&amp;width=940   940w,
+            //www.superkicks.in/cdn/shop/files/1_714a25e4-6ea0-4523-a2ad-a2b953f7a1e1.png?v=1719334920&amp;width=1066 1066w,
+            //www.superkicks.in/cdn/shop/files/1_714a25e4-6ea0-4523-a2ad-a2b953f7a1e1.png?v=1719334920                2000w
+          "
+          src="//www.superkicks.in/cdn/shop/files/1_714a25e4-6ea0-4523-a2ad-a2b953f7a1e1.png?v=1719334920&amp;width=533"
+          sizes="(min-width: 1440px) 327px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+          alt=""
+          class="motion-reduce rounded-md"
+          loading="lazy"
+          width="250"
+          height="250"
+        />
+        <div class="ml-2 grid">
+          <span class="text-gray-500 text-xs mt-2">Adidas</span>
+
+          <span class="font-normal">MAD IIINFINITY</span>
+          <span class="text-gray-400 text-sm">CARBON BLACK/CHACOA-CARBON'</span>
+          <span>₹ 11,999.00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-200 pt-5 text-3xl font-semibold pl-10 pb-10">
+      <span> Stores </span>
+
+      <div class="flex justify-around mt-10">
+        <div>
+          <img
+            src="//www.superkicks.in/cdn/shop/files/3_afafaad5-396c-4123-9db2-62a40dfb8a23.jpg?v=1690967113"
+            alt=""
+            width="250"
+            height="250"
+          />
+        </div>
+        <div>
+          <img
+            src="//www.superkicks.in/cdn/shop/files/1_9f867289-2726-4803-aaf5-46d6042cdf04.jpg?v=1690967178"
+            alt=""
+            width="250"
+            height="250"
+          />
+        </div>
+        <div>
+          <img
+            src="//www.superkicks.in/cdn/shop/files/4_d1ad8724-0844-4f50-a570-0ff794b664a7.jpg?v=1690967231"
+            alt=""
+            width="250"
+            height="250"
+          />
+        </div>
+        <div>
+          <img
+            src="//www.superkicks.in/cdn/shop/files/2_0e31b185-2f03-4d6b-b7ec-695589fe2c5b.jpg?v=1690967272"
+            alt=""
+            width="250"
+            height="250"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-around bg-black text-white py-5 px-10">
+      <div class="flex flex-col">
+        <span class="mt-5">INFO</span>
+        <ul class="text-xs mt-5 space-y-4">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Releases</a></li>
+          <li><a href="#">Stores</a></li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">Blogs</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col">
+        <span class="mt-5">POLICIES</span>
+        <ul class="text-xs mt-5 space-y-4">
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Returns & Exchange</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Order & Shipping</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col">
+        <span class="mt-5">OUR SOCIALS</span>
+        <div class="flex mt-5 justify-around">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+            class="icon icon-facebook"
+            viewBox="0 0 18 18"
+            height="1.5rem"
+            width="1.5rem"
+          >
+            <path
+              fill="currentColor"
+              d="M16.42.61c.27 0 .5.1.69.28.19.2.28.42.28.7v15.44c0 .27-.1.5-.28.69a.94.94 0 01-.7.28h-4.39v-6.7h2.25l.31-2.65h-2.56v-1.7c0-.4.1-.72.28-.93.18-.2.5-.32 1-.32h1.37V3.35c-.6-.06-1.27-.1-2.01-.1-1.01 0-1.83.3-2.45.9-.62.6-.93 1.44-.93 2.53v1.97H7.04v2.65h2.24V18H.98c-.28 0-.5-.1-.7-.28a.94.94 0 01-.28-.7V1.59c0-.27.1-.5.28-.69a.94.94 0 01.7-.28h15.44z"
+            ></path>
+          </svg>
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+            class="icon icon-instagram"
+            viewBox="0 0 18 18"
+            height="1.5rem"
+            width="1.5rem"
+          >
+            <path
+              fill="currentColor"
+              d="M8.77 1.58c2.34 0 2.62.01 3.54.05.86.04 1.32.18 1.63.3.41.17.7.35 1.01.66.3.3.5.6.65 1 .12.32.27.78.3 1.64.05.92.06 1.2.06 3.54s-.01 2.62-.05 3.54a4.79 4.79 0 01-.3 1.63c-.17.41-.35.7-.66 1.01-.3.3-.6.5-1.01.66-.31.12-.77.26-1.63.3-.92.04-1.2.05-3.54.05s-2.62 0-3.55-.05a4.79 4.79 0 01-1.62-.3c-.42-.16-.7-.35-1.01-.66-.31-.3-.5-.6-.66-1a4.87 4.87 0 01-.3-1.64c-.04-.92-.05-1.2-.05-3.54s0-2.62.05-3.54c.04-.86.18-1.32.3-1.63.16-.41.35-.7.66-1.01.3-.3.6-.5 1-.65.32-.12.78-.27 1.63-.3.93-.05 1.2-.06 3.55-.06zm0-1.58C6.39 0 6.09.01 5.15.05c-.93.04-1.57.2-2.13.4-.57.23-1.06.54-1.55 1.02C1 1.96.7 2.45.46 3.02c-.22.56-.37 1.2-.4 2.13C0 6.1 0 6.4 0 8.77s.01 2.68.05 3.61c.04.94.2 1.57.4 2.13.23.58.54 1.07 1.02 1.56.49.48.98.78 1.55 1.01.56.22 1.2.37 2.13.4.94.05 1.24.06 3.62.06 2.39 0 2.68-.01 3.62-.05.93-.04 1.57-.2 2.13-.41a4.27 4.27 0 001.55-1.01c.49-.49.79-.98 1.01-1.56.22-.55.37-1.19.41-2.13.04-.93.05-1.23.05-3.61 0-2.39 0-2.68-.05-3.62a6.47 6.47 0 00-.4-2.13 4.27 4.27 0 00-1.02-1.55A4.35 4.35 0 0014.52.46a6.43 6.43 0 00-2.13-.41A69 69 0 008.77 0z"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M8.8 4a4.5 4.5 0 100 9 4.5 4.5 0 000-9zm0 7.43a2.92 2.92 0 110-5.85 2.92 2.92 0 010 5.85zM13.43 5a1.05 1.05 0 100-2.1 1.05 1.05 0 000 2.1z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <span class="mt-5">SUBSCRIBE TO OUR NEWSLETTER </span>
+
+        <input
+          type="email"
+          name="contact[email]"
+          class="field__input mt-5 rounded py-1 px-1"
+          value=""
+          aria-required="true"
+          autocorrect="off"
+          autocapitalize="off"
+          autocomplete="email"
+          placeholder="Email Address"
+          required=""
+        />
+      </div>
+    </div>
+    <div class="bg-black text-white text-center">
+      <div class="py-5">© 2024, Superkicks</div>
+    </div>
+  </body>
+</html>
